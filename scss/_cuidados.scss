@@ -1,0 +1,10 @@
+.cardCuidados{
+    background-color: $colorPrimario;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+        .card-title{
+            font-size: $tamanioTexto;
+            font-weight: 900;
+        }
+}

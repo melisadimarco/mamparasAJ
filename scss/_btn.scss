@@ -1,0 +1,34 @@
+@each $key , $var in $colores {
+    .btn-#{$key}{
+        @extend .btn;
+        background-color: $var;
+    }
+    
+}
+
+$colores:(
+    colorPrimario:darkgray,
+    colorSecundario: darkslategray,
+);
+
+@mixin propiedades($ancho,$alto,$colorLetra) {
+    width: $ancho;
+    height: $alto;
+    color: $colorLetra;
+}
+
+.btn{
+    padding: map-get($btn , padding);
+    border: map-get($btn, bordes);
+    border-radius: map-get($btn,radio);
+    @include propiedades (100px,auto,rgb(230, 16, 16));
+}
+
+
+.card{
+    display: flex;
+    height: 100px;
+    margin: 5px;
+    align-items: center;
+    @include propiedades(500px,auto,rgb(0, 0, 0) );
+}

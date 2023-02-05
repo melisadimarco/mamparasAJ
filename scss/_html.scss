@@ -1,0 +1,28 @@
+html { font-size: 12px;
+    a{
+        color: inherit;
+        text-decoration: none;
+        &:hover { color: blueviolet;}
+    }
+    
+        body{
+            background-color: white;
+        }
+    
+            .btn{
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                &:hover { color: blueviolet;}
+            }
+    
+                .mayus{
+                    text-transform: uppercase;
+                }
+                    .h1{
+                        color: white;
+                        font-size: $tamanioTitulo;
+                        font-weight: 900;
+                        text-align: center;
+                    }
+}

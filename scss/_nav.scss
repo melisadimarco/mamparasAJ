@@ -1,0 +1,18 @@
+.nav{
+    font-size: $tamanioTexto;
+    margin: 10px;
+    align-items: center;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+
+        li{
+            padding: 5px;
+            a{
+              text-decoration: none;
+              &:hover { color: blueviolet;};
+            }
+        }
+    }
+}
